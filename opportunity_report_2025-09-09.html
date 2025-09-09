@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Opportunity Analysis Report</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      line-height: 1.6; 
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 { 
+      color: #2c3e50; 
+      border-bottom: 3px solid #2c3e50;
+      padding-bottom: 10px;
+    }
+    h2 { 
+      color: #34495e; 
+      margin-top: 30px;
+    }
+    .summary { 
+      background: #fff; 
+      padding: 20px; 
+      border-radius: 8px; 
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .metrics {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .metric-box {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 4px solid #2c3e50;
+    }
+    .metric-label {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .metric-value {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .toc {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .toc ul {
+      columns: 2;
+      column-gap: 30px;
+    }
+    .toc li {
+      margin-bottom: 8px;
+      break-inside: avoid;
+    }
+    .toc a:hover {
+      text-decoration: underline !important;
+    }
+    table {
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    @media print {
+      .toc { page-break-after: always; }
+      body { background-color: white; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Opportunity Analysis Report</h1>
+  
+  <div class="summary">
+    <p><strong>Report Generated:</strong> 9/9/2025 at 10:19:45 PM</p>
+    <p><strong>Total Opportunities Analyzed:</strong> 32</p>
+  </div>
+
+  <div class="metrics">
+    <h2>Executive Summary</h2>
+    <div class="metrics-grid">
+      <div class="metric-box">
+        <div class="metric-label">Total Pipeline Value</div>
+        <div class="metric-value">$24,511,142</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-label">Average KF Score</div>
+        <div class="metric-value">65</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-label">Total Opportunities</div>
+        <div class="metric-value">32</div>
+      </div>
+    </div>
+    <div style="margin-top: 20px;">
+      <p><strong>Stage Distribution:</strong> 5. Proposal/Price Quote: 14 | 6. Negotiate: 9 | 4. Scoping: 5 | 7. Final Contract Execution: 4</p>
+      <p><strong>Forecast Categories:</strong> Best Case: 23 | Commit: 4 | N/A: 2 | Probable: 2 | Omitted: 1</p>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <p style="color: #666; font-size: 0.9em;">Opportunities sorted by ACV (highest to lowest)</p>
+    <ul style="list-style-type: decimal;">
+      <li><a href="#opp-0" style="color: #2c3e50; text-decoration: none;">
+    Hughston Clinic - PKScribe/RCM - $5,280,000
+  </a></li><li><a href="#opp-1" style="color: #2c3e50; text-decoration: none;">
+    Nathan Littauer Hospital - Agents - New Business - $4,500,000
+  </a></li><li><a href="#opp-2" style="color: #2c3e50; text-decoration: none;">
+    Compassus - Existing Business - Full Cycle RCM - $4,000,000
+  </a></li><li><a href="#opp-3" style="color: #2c3e50; text-decoration: none;">
+    Compassus - Platform Sale Expansion - $2,200,000
+  </a></li><li><a href="#opp-4" style="color: #2c3e50; text-decoration: none;">
+    Doctors RCM - $2,000,000
+  </a></li><li><a href="#opp-5" style="color: #2c3e50; text-decoration: none;">
+    Valley Health - PKScribe - $1,500,000
+  </a></li><li><a href="#opp-6" style="color: #2c3e50; text-decoration: none;">
+    Baystate - PK Autonomous Coding co-dev - $1,000,000
+  </a></li><li><a href="#opp-7" style="color: #2c3e50; text-decoration: none;">
+    Brookdale Senior Living (HCA) - Scribe - Existing Business - $750,000
+  </a></li><li><a href="#opp-8" style="color: #2c3e50; text-decoration: none;">
+    TAG-Scribe - $621,000
+  </a></li><li><a href="#opp-9" style="color: #2c3e50; text-decoration: none;">
+    CSL Behring - Athelas Home - Study #324 Reboot - $425,000
+  </a></li><li><a href="#opp-10" style="color: #2c3e50; text-decoration: none;">
+    Sutter-Caring Contacts - $345,000
+  </a></li><li><a href="#opp-11" style="color: #2c3e50; text-decoration: none;">
+    DCH Health System - Strongline - New Business - $290,352
+  </a></li><li><a href="#opp-12" style="color: #2c3e50; text-decoration: none;">
+    Chapters- Intake - $260,000
+  </a></li><li><a href="#opp-13" style="color: #2c3e50; text-decoration: none;">
+    Doctors Scribe - $200,000
+  </a></li><li><a href="#opp-14" style="color: #2c3e50; text-decoration: none;">
+    Beebe Medical Center - Strongline - Duress - New Business - $135,000
+  </a></li><li><a href="#opp-15" style="color: #2c3e50; text-decoration: none;">
+    SUNY expansion practices - $117,281
+  </a></li><li><a href="#opp-16" style="color: #2c3e50; text-decoration: none;">
+    CA DSH - Athelas Home Hardware & Service Expansion - $100,000
+  </a></li><li><a href="#opp-17" style="color: #2c3e50; text-decoration: none;">
+    Penn Medicine - Scribe - New Business - $100,000
+  </a></li><li><a href="#opp-18" style="color: #2c3e50; text-decoration: none;">
+    Beaufort Memorial - Strongline - New Business - $98,780
+  </a></li><li><a href="#opp-19" style="color: #2c3e50; text-decoration: none;">
+    SIU Med CC + Analytics - $96,804
+  </a></li><li><a href="#opp-20" style="color: #2c3e50; text-decoration: none;">
+    Norwalk Hospital - Strongline - New Business - $95,000
+  </a></li><li><a href="#opp-21" style="color: #2c3e50; text-decoration: none;">
+    Summit BCH- XP Agents -> RCM - $90,000
+  </a></li><li><a href="#opp-22" style="color: #2c3e50; text-decoration: none;">
+    Portneuf Medical Center - Strongline - Duress - New Business - $76,425
+  </a></li><li><a href="#opp-23" style="color: #2c3e50; text-decoration: none;">
+    Fraser Scribe - Pilot - $67,500
+  </a></li><li><a href="#opp-24" style="color: #2c3e50; text-decoration: none;">
+    Shore Medical Center - Strongline - New Business - $65,000
+  </a></li><li><a href="#opp-25" style="color: #2c3e50; text-decoration: none;">
+    Memorial Hermann Texas Medical Center - Strongline - Duress - New Business - $30,000
+  </a></li><li><a href="#opp-26" style="color: #2c3e50; text-decoration: none;">
+    Beth Israel Bayridge - Duress - Expansion - $20,000
+  </a></li><li><a href="#opp-27" style="color: #2c3e50; text-decoration: none;">
+    Lifespan - Strongline - New Business - $20,000
+  </a></li><li><a href="#opp-28" style="color: #2c3e50; text-decoration: none;">
+    Beth Israel Anna Jaques - Strongline - Expansion - $16,000
+  </a></li><li><a href="#opp-29" style="color: #2c3e50; text-decoration: none;">
+    Beth Israel Behavioral Health Services (Danvers) - Strongline - Expansion - $12,000
+  </a></li><li><a href="#opp-30" style="color: #2c3e50; text-decoration: none;">
+    Boston Childrens - Strongline Asset Tracking - $0
+  </a></li><li><a href="#opp-31" style="color: #2c3e50; text-decoration: none;">
+    UHS - Referral - $0
+  </a></li>
+    </ul>
+  </div>
+
+  <h2>Detailed Opportunity Analysis</h2>
+  
+    <table id="opp-0" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #1
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Hughston Clinic - PKScribe/RCM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Mick Majewski</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$5,280,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/13/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">82</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity scored 82 on the KF scorecard with strong momentum: multiple drivers confirm impact (employee satisfaction/retention and growth strategy) and we have a past-purchase/early adopter signal. There was an on-site meeting (Yes, 3) and executive sponsor engagement (Yes, 3), and the client views our EHR as a good fit (Yes, 5). However, there is a notable governance gap: no investor/advisor relationship with key buying influences (No, 8) and budget timing remains Unknown (4), contributing to data gaps (20 Unknown Responses) that could impede timely funding. The lack of a Commure strategic partner relationship (No, 6) also poses deployment and partner alignment risk despite other positives.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Lack of investor/advisor relationship with key buying influences and unconfirmed budget timing (Budget Not Confirmed) creating governance and funding risk.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Leverage the executive sponsor to mobilize an investor/advisor partner or identify an interim sponsor; schedule a 60–90 minute budget-funding discovery with the CFO and Economic Buyer by 2025-09-25; prepare a targeted ROI/TCO package to accompany a formal budget request.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Schedule a 60–90 minute budget/funding confirmation session with the CFO and Economic Buyer by 2025-09-25.</li><li>Identify and engage a potential investor/advisor sponsor or alternate champion to fill the KBIs gap by 2025-09-28.</li><li>Deliver a 5-year TCO/ROI business case tailored to Hughston Clinic and share by 2025-10-01.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-1" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #2
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Nathan Littauer Hospital - Agents - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$4,500,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">82</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">The Nathan Littauer opportunity shows strong business impact signals and a willingness to adopt new tech (Yes to growth/financial impact, Yes to early adopter behavior, and Yes to a vendor-neutral buying process). There is an on-site meeting that has occurred (Yes, 3) and multiple stakeholders are engaged (Commure strategic partner relationship is present, Yes, 6; executive sponsor is engaged, Yes, 3). However, there remains a critical gap: there is no investor/advisor relationship with key buying influences (No, 8) and budget timing is Unknown (4), creating a funding and governance gap alongside 20 Unknown Responses in the scorecard.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No investor/advisor relationship with key buying influences; budget timing remains Unknown (data gaps).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Vector in an investor/advisor sponsor by engaging the executive sponsor to nominate a funding advocate; run a rapid 1-hour budget alignment call with the CFO and Economic Buyer by 2025-11-07; provide a concise ROI model to accelerate budget approval.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify and engage an investor/advisor sponsor or equivalent champion; align on funding path by 2025-11-07.</li><li>Schedule a 60-minute budget confirmation call with CFO/Economic Buyer by 2025-11-10.</li><li>Provide a tailored ROI/TCO brief for the proposed 4.5M ACV by 2025-11-15.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-2" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #3
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Compassus - Existing Business - Full Cycle RCM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">4. Scoping</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$4,000,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">97</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Compassus Existing Business shows outstanding alignment with high internal buy-in: established Commure partner (Yes, 6), investor/advisor influence present (Yes, 8), and a clear ROI framework (Yes, 7). There is broad consensus on EHR needs being met (Yes, 5) and a multi-stakeholder buy-in (Yes, 5). The primary risk is budget timing and funding confirmation remaining Unknown (4), which leaves a data gap highlighted by the critical gaps: Budget Not Confirmed and 20 Unknown Responses. The lack of known budget certainty could slow the scoping to proposal transition despite strong internal alignment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget timing and funding confirmation remain Unknown, creating a governance bottleneck despite strong stakeholder alignment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Secure a formal budget approval step with the Economic Buying Influence by scheduling a 90-minute scoping and funding session; confirm funding source and owner, and lock in procurement path by 2025-11-10.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Convene a 90-minute scoping/funding session with Economic Buying Influence and sponsor by 2025-11-10.</li><li>Obtain formal confirmation on funding source and owner; align multiple stakeholders on the budget by 2025-11-15.</li><li>Publish a joint scoping outline and success criteria with Commure partner to close the gap by 2025-11-20.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-3" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #4
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Compassus - Platform Sale Expansion</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$2,200,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">100</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Platform expansion at Compassus demonstrates broad consensus and strong engagement across stakeholders (KFScore 100; stage 5). All key buying signals align: past investment strength in tech (Yes, 8), ROI criteria established (Yes, 7), compelling outcomes identified (Yes, 6), and broad stakeholder buy-in for expanded scope (Yes, 5). The remaining risk is budget timing/funding confirmation which is currently Unknown (4), along with the typical unknowns in the buying process (20 Unknown Responses). The Bluesheet is not present, but the data gaps still pose a decision risk as you move toward final pricing.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget timing and funding confirmation Unknown, leaving a hurdle before final pricing/contracting.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Lock down Economic Buying Influence funding details via a 60-minute funding alignment with the sponsor; ensure multiple stakeholders reaffirm scope and procurement alignment by 2025-11-07; prepare final pricing and ROI package for rapid close.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Confirm budget timing and funding source with Economic Buying Influence by 2025-11-07.</li><li>Run a multi-stakeholder scoping workshop to validate expanded product scope by 2025-11-10.</li><li>Deliver final pricing, ROI model, and procurement path for contract readiness by 2025-11-15.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-4" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #5
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Doctors RCM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">David Swanson</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">4. Scoping</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$2,000,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/10/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">61</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Doctors RCM presents a solid business impact narrative (Yes to impact; Yes to early adopter) and a meaningful Economic Buying Influence signal (past history of investing in cutting-edge tech, Yes, 8). There is on-site engagement (Yes, 3) and ROI criteria defined (Yes, 6). However, the scorecard shows significant gaps: EHR alignment is Not meeting needs (No, 5), no established Commure strategic partner (No, 6), and investor/advisor relationship with key buying influences is not present (No, 8). Budget timing and funding source are Unknown, with 20 Unknown Responses, creating a critical data gap that adds risk at scoping.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No investor/advisor relationship with key buying influences and budget timing unknown, compounding scoping risk.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Identify and engage a sponsoring investor/advisor and map a funding path; schedule a 60-minute budget alignment with the CFO and Economic Buying Influence by 2025-10-05; refresh the business case with clear EHR integration viability to reduce Unknown responses.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Confirm an investor/advisor sponsor and budget pathway with the sponsor by 2025-09-25.</li><li>Coordinate a budget alignment session with the CFO and Economic Buying Influence by 2025-10-05.</li><li>Present a refreshed EHR integration validation and updated ROI model by 2025-10-15.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-5" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #6
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Valley Health - PKScribe</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Mick Majewski</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Commit</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$1,500,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">2025-08-31</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">97</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">The PKScribe opportunity shows strong overall alignment with a KF score of 97, driven by multiple Yes responses across business impact, early adoption, and executive sponsorship. Notably, there is confirmed investor/advisor engagement and a clear ROI framework, including defined success metrics. However, 20 Unknown responses and Budget Not Confirmed indicate gaps in budget ownership and procurement clarity, creating deployment and timing risk. An on-site meeting has occurred, and multiple influencers are engaged, which provides leverage for finalizing funding once budget ownership is solidified.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget Not Confirmed and 20 Unknown Responses (budgetConfirmed/financing clues), plus unknowns in buying process.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Immediate budget owner confirmation with Economic Buyer and CFO; run a joint ROI/TCO session with the investor sponsor to lock funding source and timing; document a fixed pilot/contract pathway once budget is identified.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Schedule a 60-minute budget alignment call with the CFO and Economic Buying Influence by 2025-08-12.</li><li>Organize a cross-functional workshop (IT, Procurement, Finance) with the investor sponsor present to confirm funding source and pilot/contract path by 2025-08-20.</li><li>Deliver a refreshed ROI/TCO package highlighting budget impact and finalize decision criteria to reduce remaining Unknown responses.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-6" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #7
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Baystate - PK Autonomous Coding co-dev</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Amy Sullivan</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$1,000,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">2025-09-30</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">83</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Baystate shows solid fit with a KF score of 83 and a Best Case forecast, with early adopter behavior and strong buying-process clarity listed as Yes. The client has a strategic partner relationship and ROI-oriented success criteria, which supports proposal momentum. However, Budget timing/confirmation are Unknown and there are 20 Unknown responses, indicating unclear procurement ownership and funding, which could delay contract signing. The presence of executive/influencer contact is noted but some critical gaps remain in budget and pilot commitment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget timing/confirmation Unknown and 20 Unknown Responses affecting procurement readiness.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Assign an Economic Buy-in owner, complete budget confirmation, and secure a pilot commitment; prepare a joint business case with the investor/advisor sponsor to accelerate procurement.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify Budget Owner and Funding Source by 2025-08-25 and confirm approval pathway.</li><li>Coordinate a 90-minute cross-functional session with IT, Finance, and Procurement, ensuring executive sponsor attendance, by 2025-09-05.</li><li>Provide a pilot proposal and ROI scenario tailored to Baystate’s coding efficiency goals to drive a contract commit by 2025-09-20.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-7" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #8
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Brookdale Senior Living (HCA) - Scribe - Existing Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$750,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">2025-10-31</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">87</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Brookdale presents a strong fit (87) with an existing relationship and a solid ROI frame, and a high investor/advisor influence score (8). However, the response shows Unknown on several buying-process details and the absence of an on-site meeting yet (meeting question answered No). The combination of Unknown current-state understanding and budget/policy gaps raises closing risk for Stage 5. The client does have an internal/External pressure to decide and multiple stakeholders are engaged, which is favorable for progression once the gaps are closed.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Unknowns in buying process and current-state understanding; No on-site meeting yet.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Rapidly secure an on-site stakeholder session with executive sponsor and primary influencers; validate budget owner and confirm procurement path; bring investor relationship into the loop to accelerate decision.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Book an on-site session with Brookdale’s executive sponsor and key stakeholders by 2025-09-07.</li><li>Confirm budget owner and funding source by 2025-09-12 and align with Economic Buying influence.</li><li>Deliver an updated business case including ROI metrics and a clear path to pilot/contract by 2025-09-25.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-8" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #9
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">TAG-Scribe</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">David Swanson</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Commit</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$621,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">2025-08-01</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">61</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">TAG-Scribe has a modest KF score (61) with visible progress on ROI definitions and multiple stakeholder buy-in, but several critical gaps are evident: no pilot commitment, no established strategic/vendor partner, no executive sponsor engagement, and no on-site meeting. The lack of an investor/advisor relationship (No) and multiple unknowns lowers the probability of near-term commitment, despite favorable product fit and described flexibility. The Bluesheet data indicates heightened risk and management attention needed to avoid a stall.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No executive sponsor or investor/advisor engagement and no on-site meeting; pilot commitment missing.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Identify and activate an executive sponsor; secure investor/advisor alignment if possible; schedule an on-site meeting to validate scope and secure pilot commitment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Assign an executive sponsor within TAG's organization and confirm their commitment by 2025-08-10.</li><li>Schedule an on-site discovery/validation session by 2025-08-15 to advance pilot discussions.</li><li>Develop and share a targeted ROI-focused business case and confirm pilot scope by 2025-08-25.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-9" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #10
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">CSL Behring - Athelas Home - Study #324 Reboot</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$425,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">2025-08-21</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">70</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">CSL Behring shows a Best Case forecast with a solid baseline (70 KF score) but contains numerous Unknowns across the buying process and decision state. Budget confirmation is not yet established, and executive sponsorship is not clearly defined, with several items indicating Unknowns and no on-site meeting to date. While there is a strong investor/advisor influence signal (Yes, 8) and several progress markers, the lack of current-state clarity and budget ownership poses a real risk to closing in Stage 6.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget confirmation unknown and multiple Unknown responses; lack of executive sponsor engagement.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Secure explicit budget ownership and funding source; engage an executive sponsor; reconvene with CSL Behring’s governance to resolve blockers and advance to contract.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Confirm budget owner and funding source by 2025-08-19 and document funding approval path.</li><li>Identify and engage an executive sponsor and schedule a negotiation/clarification call by 2025-08-22.</li><li>Provide a revised contract-ready business case with explicit success criteria and a tighter decision framework by 2025-08-28.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-10" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #11
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Sutter-Caring Contacts</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">David Swanson</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$345,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/26/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">61</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity scored 61 on the KF scorecard. It shows strong business impact signals and early adoption indicators (business impact example yes with 7; early adopter with 6), and there is existing investor/advisor influence (8). However, there is no pilot/contract commitment yet for the Ambien AI solution (7) and budget planning remains Unknown (4). On-site engagement is lacking (did not occur, 3) and executive sponsorship is not confirmed (3). There are 20 Unknown responses driving coverage risk, requiring urgent alignment on budget and sponsor engagement.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget/timing not confirmed and limited on-site engagement (Unknown budget and no completed on-site meeting), compounded by 20 Unknown responses which leaves critical gaps in the business case.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Schedule a CFO/Economic Buyer workshop to lock budget timing and funding source; arrange an on-site executive briefing with a sponsor, and bring in the coach to validate ROI assumptions and close the funding gap.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify and connect with the CFO or Economic Buyer to obtain budget confirmation by 9/30/2025.</li><li>Schedule an on-site meeting with the executive sponsor and key stakeholders within the next 2 weeks.</li><li>Run a focused business-case session with the coach to convert the 20 Unknown responses into concrete decisions and confirm pilot/contract commitments.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-11" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #12
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">DCH Health System - Strongline - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Lomax Edwards</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$290,352</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/1/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">40</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">DCH Health System shows significant gaps, with a KF score of 40. Key gaps include no investor/advisor relationship with influential buyers (No, 7) and budget timing not confirmed (No, 6). While there is access to economic buying influence via our coach (5) and some engagement with a known partner (Yes 5), multiple Unknowns persist, including overall buying process clarity and vendor integration readiness. On-site engagement is present (Yes, 3) but the lack of a sponsor and budget clarity elevates risk in the Proposal stage.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No investor/advisor relationship with key buying influences and budget timing not confirmed, creating a high risk to secure Economic Buyer alignment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Rapidly establish an investor/advisor sponsor by leveraging the coach to connect with an executive sponsor; secure formal budget confirmation from the Economic Buyer; validate a partner/integrator path to ensure procurement readiness.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Coordinate with the coach to identify and engage a formal investor/advisor sponsor within 5 business days.</li><li>Secure budget timing confirmation and funding source with the CFO/Economic Buyer by 9/20/2025.</li><li>Schedule a joint session with the sponsor and IT/Facility leads to align procurement and vendor integration pathways.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-12" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #13
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Chapters- Intake</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Bryan Alas</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$260,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/28/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">66</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Chapters is at 66 on KF with a solid pattern of multi-stakeholder engagement and baseline ROI framing (site visits, ROI criteria, and successful prior projects noted). The team shows strong alignment on existing Commure strategic partnerships (Yes 6) and EHR fit (Yes 5), and there is evidence of multiple influencers and direct access to Economic Buying Influence (Yes 4, 5). However, there are gaps around investor sponsorship (No, 8) and some gaps in compelling event clarity (Unknown, 6) and on-site engagement (No, 3). The combination signals a well-positioned deal with a sponsorship gap and some engagement-risk items that need closing before final contraction.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Lack of investor/advisor sponsorship (No, 8) and missing on-site engagement (No, 3) plus an unclear compelling event (Unknown, 6) create negotiation risk in finalizing terms.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Activate an investor sponsor by leveraging the coach to surface an executive sponsor; arrange an on-site meeting with key influencers; explicitly define a compelling event and success criteria to accelerate proposal/contracting.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify and engage an investor/advisor sponsor for Chapters within 3 business days.</li><li>Schedule an on-site stakeholder briefing with the executive sponsor and primary influencers within 2 weeks.</li><li>Draft and confirm a compelling event and success criteria that align with ROI targets by 9/15/2025.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-13" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #14
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Doctors Scribe</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">David Swanson</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">4. Scoping</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$200,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/19/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">69</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Doctors Scribe shows a high KF score (69) at Scoping stage, with strong signals on RLA (7) and RTLS familiarity (6). There is clear momentum in the client’s ability to purchase new tech (Yes 7 on early adopter and 6 on live activation) and a solid understanding of ROI expectations (Yes 7/3/3). However, there remain Unknowns around budget timing and some dependencies (Unknown 4) and certain gaps in direct economic sponsorship visibility (Coach access 4) that could slow progression to Proposal. The on-site meeting has not occurred yet (3), which warrants focus in Stage 4.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Unclear compelling event and some budget/funding details remain Unknown (4) plus lack of an on-site meeting (3) and limited direct sponsor visibility (coach access 4).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Finalize budget timing with the Economic Buyer; implement an on-site scoping workshop with business leaders; secure sponsor alignment through the coach and establish a defined compelling event and success criteria.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Obtain budget timing confirmation from Economic Buyer by 9/15/2025.</li><li>Schedule a scoping workshop with the business sponsor and IT lead within the next 7 days.</li><li>Engage coach to map sponsor contacts and secure explicit ROI success criteria for the business case.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-14" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #15
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Beebe Medical Center - Strongline - Duress - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$135,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">37</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Beebe Medical Center scores 37, placing it in a high-risk tier for the Proposal stage. The critical gaps show Budget Not Confirmed and a large number of Unknown responses (20), indicating substantial information gaps to close before contracting. There is no investor/advisor sponsor engaged (No 3) and no confirmed on-site meeting (Unknown 3), while multiple positives exist around vendor relationships and ROI framing (Yes 3-5 across several items). The combination suggests aggressive acceleration is needed on budget and sponsor alignment to capitalize on the current momentum.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget not confirmed (6) and absence of an investor/advisor sponsor (No, 3) with 20 Unknown responses creating data gaps.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Work with the coach to identify an executive sponsor, secure budget confirmation and funding source, and schedule a site visit to accelerate decision-making.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Lock budget ownership and timing with the Economic Buyer by 9/5/2025.</li><li>Identify and engage an executive sponsor or investor/advisor to support the procurement process within 10 days.</li><li>Arrange an on-site meeting with Beebe leadership and the project sponsor to finalize scope and ROI metrics.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-15" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #16
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">SUNY expansion practices</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Amy Sullivan</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$117,281</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/30/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">68</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity shows strong business impact signals (7) and a history of early technology adoption (6), plus a robust investor/advisor influence (8) and well-defined ROI expectations (7). There is clear evidence of demand for new capabilities and a direct EHR fit (5) as a positive, but critical gaps exist around budget confirmation and the overall buying responses, with 20 Unknown Answers on the scorecard. Notably, there is no confirmed pilot commitment and several unknowns in the current-state understanding and decision process, which elevates execution risk. The combination of strong influence signals with large unknowns creates both upside and near-term blockers that must be resolved to close this quarter.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget Not Confirmed and 20 Unknown Responses creating uncertainty in funding and decision-making.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Host a budget-alignment and RLA workshop with the Economic Buying Influence and SUNY executive sponsor; present a TCO/ROI model to lock budget timing and funding source; secure a pilot commitment to move from proposal toward contract.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Schedule a 60-minute RLA/budget alignment session with SUNY's executive sponsor and procurement by 9/20/2025.</li><li>Obtain pilot commitment or formal trial scope by 9/25/2025 and align success metrics in the business case.</li><li>Deliver a finalized ROI/TCO package and confirm funding source by 9/28/2025 to enable contracting conversations.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-16" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #17
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">CA DSH - Athelas Home Hardware & Service Expansion</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$100,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/30/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">69</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">The deal benefits from a clear investment and early adoption signal (Yes, 7) and strong purchasing decision indicators (Yes, 6 for past purchases and 6 for authentic buying process). However, there are notable execution gaps: no established strategic partner (No, 6), the EHR fit is not meeting needs (No, 5), and on-site meetings have not occurred (Did an on-site meeting take place? No, 3). The combination of these gaps with multiple Unknown responses heightens negotiation risk and slows binding commitments. The client also shows ongoing external pressure to act (Yes, 5) but lacks a mapped path to procurement due to the gaps above.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No executive sponsor/strategic partner and no on-site meeting, blocking final approval and integration fit.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Escalate to secure an executive sponsor or investor/advisor champion and bring in a Commure strategic partner to validate EHR integration; schedule an on-site meeting with IT/clinical leaders to resolve EHR fit and scope a pilot.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify and engage the executive sponsor or investor/advisor for this account and schedule an on-site workshop by 9/28/2025.</li><li>Bring in a strategic partner to validate EHR alignment and propose a joint integration plan by 9/30/2025.</li><li>Draft a pilot/POC scope with defined success criteria and obtain sign-off by procurement to advance contracting.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-17" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #18
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Penn Medicine - Scribe - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Eric Valentin</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">4. Scoping</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$100,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">56</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">The opportunity demonstrates strong intent and early adopter signals (Yes for business impact 7 and early adoption 6) plus a confirmed ROI framework (Yes, 7). However, critical gaps include budget confirmation remaining Unknown, and widespread Unknown responses (20). There is also no confirmed on-site meeting, and reliance on an investor/advisor relationship is present (Yes, 8) but executive sponsor status is Unknown, complicating the scoping of a PoC and procurement path. Overall, the deal shows strong buy-in potential but is bogged down by data and process gaps that can stall momentum.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget timing/confirmation and multiple Unknown responses impede scoping and PoC progression.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Engage the CFO/procurement to confirm budget timing and funding source; schedule a PoC kickoff with executive sponsorship; collect the remaining critical responses to close the knowledge gaps.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Set a 60-minute budget alignment with procurement by 10/10/2025 and confirm funding source.</li><li>Schedule an executive meeting (Kevin Mahoney and Tanay) to advance PoC discussions by 10/15/2025.</li><li>Provide a detailed PoC plan with expected outcomes and ROI metrics by 10/22/2025.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-18" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #19
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Beaufort Memorial - Strongline - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Timothy Knoll</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$98,780</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">48</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Key risk signals include a lack of understanding on RLA costs (No, 7) and RTLS live activation status (No, 6), plus a preference for managed services with low capital entry (Yes, 5). There is no established Commure strategic partner (No, 6) and no on-site meeting to date (Did an customer on-site meeting take place? No, 3). The client has a history of adopting cutting-edge tech (Yes, 5), and there is existing IT drive toward standardization (Yes, 3). However, the overall engagement lacks executive sponsorship and a partner ecosystem alignment, which raises the risk of stalled negotiations and delayed deployment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No executive sponsor and no ongoing partner ecosystem; no on-site meeting completed.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Identify an executive sponsor and bring in a VAR/partner to support a managed services approach; schedule an on-site alignment meeting to validate RTLS use and RLA scope; develop a concrete implementation plan with cost modeling.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify CIO/facility sponsor and arrange an on-site meeting by 9/28/2025.</li><li>Engage a compatible VAR or integrator to enable a ready-made managed services option by 10/10/2025.</li><li>Produce a cost/benefit and RLA cost outline to support a quick path to contracting by 10/20/2025.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-19" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #20
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">SIU Med CC + Analytics</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Amy Sullivan</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">N/A</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$96,804</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">82</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity shows a high KF score (82) with strong investor/advisor influence (Yes, 8) and a well-defined ROI framework (Yes, 6-7 range). The client demonstrates clear business impact potential (Yes, 7) and strong evidence of adopting new tech (Yes, 6). Despite the strength, there are 20 Unknown Answers, including a lack of budget confirmation, uncertain buying process, and no on-site meeting yet (3). The combination of extensive unknowns with a high overall score suggests a fast track is possible, but only if the remaining gaps are closed and a formal budget and procurement path is solidified.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget confirmation and the large number of Unknown responses blocking finalization.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Close the budget decision by coordinating with the Economic Buying Influence and executive sponsor; complete the 20 Unknown responses through targeted stakeholder interviews; schedule an on-site meeting to finalize the procurement path.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Secure budget confirmation and funding source by 9/20/2025 with the Economic Buying Influence.</li><li>Arrange an on-site executive workshop with key stakeholders by 9/25/2025 to resolve gaps and move toward contract.</li><li>Deliver a final business case and ROI validation by 9/28/2025 to enable contract drafting.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-20" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #21
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Norwalk Hospital - Strongline - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$95,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">39</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity scored 39 on KF, with 20 Unknown responses driving much of the score. Budget timing and funding are listed as Unknown, and 'Budget Not Confirmed' is a critical gap in the scorecard. There is a strong investor/advisor relationship with key buying influences (Yes, 7) and an executive sponsor engagement (Yes, 3), plus a confirmed on-site meeting (Yes, 3). However, live RTLS activation for NCC is not yet in place (No, 6) and there is no current VAR/integrator deployment (No, 6), increasing deployment risk.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget Not Confirmed / 20 Unknown Responses creating decision paralysis</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Convene a 60-minute RLA/budget alignment session with the CFO and the Economic Buyer via the coach, and confirm funding source by the end of the week; run a targeted information pack to reduce unknown responses and lock in procurement path.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Schedule an RLA and budget alignment workshop with the CFO and Economic Buyer within 5 business days; capture explicit funding source and timing.</li><li>Leverage the existing investor/advisor relationship by routing a 15-minute alignment call with the sponsor to validate economic buying influence and path to contracting.</li><li>Identify a potential VAR/integrator partner to address deployment gaps since VAR/integrator readiness is currently 'No'.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-21" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #22
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Summit BCH- XP Agents -> RCM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Kelum Fecht</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Probable</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$90,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/1/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">67</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">KF score of 67 reflects strong business impact signals (Yes, 7), evidence of early adoption (Yes, 6), and ROI definition (Yes, 7). There is clear traction on buying process understanding (Yes, 6) and on-site meetings have occurred (Yes, 3). The top gap is lack of an established Commure strategic partner (No, 6) and budget timing is still Unknown (4), with executive sponsor engagement also Unknown (3).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No established strategic partner / budget timing not confirmed</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Accelerate channel strategy by identifying a Commure strategic partner and formalizing a procurement pathway; plan a pilot with defined success metrics to validate budget impact and secure executive sponsorship.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Draft and propose a pilot with clear success criteria and a timeline to be approved by the sponsor within 7 days; align with decision committee expectations.</li><li>Engage the coach to connect with the Economic Buying Influence and confirm budget timing; target a budget decision by 8/25/2025.</li><li>Identify and onboard a Commure strategic partner or VAR within the next 14 days to reduce integration risk and strengthen deployment capability.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-22" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #23
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Portneuf Medical Center - Strongline - Duress - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Timothy Knoll</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">7. Final Contract Execution</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Commit</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$76,425</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/15/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">62</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">KF score of 62 shows solid engagement with budget timing confirmed (Yes, 6) and strong access to Economic Buying influence via coach (Yes, 5). There is positive momentum around safety-related events and ROI definitions (Yes, 6 and Yes, 3). The material risks include lack of an executive sponsor (No, 3) and no investor/advisor relationship established (No, 7). There is also no partner extending with the client currently (No, 5).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Executive Sponsor engagement: No / Investor relationship: No</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Rapidly identify and secure an executive sponsor (CIO/VP Operations) and confirm investor/advisor backing; use the coach to unlock the formal procurement committee, and present a tight ROI-driven business case.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Schedule a 45–60 minute session with the potential executive sponsor (CIO/COO) to secure formal sponsorship by 9/5/2025.</li><li>Verify existence of any investor/advisor champion and, if none, escalate to the coach to identify a sponsor from Economic Buying Influence by 9/7/2025.</li><li>Prepare a formal ROIs and business case package with explicit milestones and success criteria to present to the formal buying committee.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-23" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #24
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Fraser Scribe - Pilot</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">David Swanson</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Probable</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$67,500</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/25/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">56</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">KF score of 56 shows meaningful buying signals (early adopter Yes 6; ROI and retention goals Yes 6/7) and a well-scoped business case (Yes, 4). However, executive sponsor engagement is currently No/Unknown (3), and there is no established Commure strategic partner (No, 6). Budget timing is Unknown (4) and investor/advisor backing is not present (No, 8), signaling governance and sponsorship gaps that could stall finalization.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Executive Sponsor engagement: No / No established strategic partner</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Identify and secure an executive sponsor immediately and bring in a regional or domain partner to act as a strategic ally; provide a targeted budget plan and obtain a formal commitment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Pin down an executive sponsor (CIO/CTO) and schedule a 60-minute sponsorship meeting within 5 business days.</li><li>Identify a Commure strategic partner or co-seller within 10 days to improve governance and accelerate procurement.</li><li>Request a concrete budget commitment or formal approval to move to contract by 9/18/2025.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-24" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #25
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Shore Medical Center - Strongline - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$65,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/31/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">24</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">KF score of 24 is driven by substantial Unknown responses and critical budget uncertainty, including a Budget Not Confirmed gap and 20 Unknown Responses. The deal does show some positives such as a on-site meeting (Yes, 3) and ROI being defined as part of the value proposition (Yes, 3). However, executive sponsor engagement is clearly lacking (Is an Investor/Executive Sponsor engaged: No, 3) and there is no clear investor/advisor champion (No, 7). The absence of a Commure strategic partner is indicated (No, 6).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Executive Sponsor engagement: No / Investor/advisor champion not identified</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Accelerate sponsorship by identifying and engaging a senior sponsor; align a formal budgeting and procurement plan; consider bringing in a trusted strategic partner to de-risk deployment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify and reach out to a potential executive sponsor (CFO/CIO) and schedule a decision meeting within 7 days.</li><li>Confirm whether an investor/advisor champion exists; if not, mobilize the coach to connect with an economic buyer to secure backing by 9/15/2025.</li><li>Explore a targeted partner strategy or pilot with a named VAR to accelerate deployment and reduce unknowns by 10/15/2025.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-25" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #26
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Memorial Hermann Texas Medical Center - Strongline - Duress - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Lomax Edwards</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">6. Negotiate</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Omitted</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$30,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">39</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity scored 7 on RLA understanding (No), indicating the client lacks clarity on how RLA is achieved and the related costs. They have not activated RTLS for NCC live activation (No, 6), and there is no investor/advisor relationship with key buying influences (No, 3). Budget timing is confirmed to initiate proposal (Yes, 6) and there is a safety-impact event driving urgency (Yes, 6). The critical gaps show Budget Not Confirmed and 20 UnknownResponses, signaling significant uncertainty in the decision framework despite a live on-site meeting (Yes).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">No investor/advisor relationship with key buying influences</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Engage the client's executive sponsor and Economic Buying Influencer immediately; run a targeted RLA/workshop to clarify costs and adoption plan; bring in the VAR/integrator (Yes) as co-seller to accelerate stakeholder alignment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Identify and reach out to the client's executive sponsor and Economic Buying Influencer; schedule a 60-minute alignment call within 5 business days</li><li>Prepare a concise RLA_COSTS matrix and TCO analysis to address the 'Budget Not Confirmed' gap and share with sponsor</li><li>Leverage the existing VAR/integrator relationship (Yes) to co-host a joint discovery session and secure on-site executive buy-in</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-26" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #27
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Beth Israel Bayridge - Duress - Expansion</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">7. Final Contract Execution</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">N/A</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$20,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">40</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">RLA understanding is unknown (7) while NCC live activation is not yet done (No, 6). The client prefers a vendor for managed services (Yes, 5) but there is no current VAR/integrator deploying with Commure offerings (No, 6), and there is no confirmed investor sponsor (Unknown, 3). Budget timing is Unknown (6) with a positive safety/urgent event (Yes, 6). Critical gaps show Budget Not Confirmed and 20 Unknown Responses, creating final contract risk despite favorable expansion signals and investor interest (Yes).</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Unknown investor/advisor sponsor engagement for final contract</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Pin down the executive sponsor and formal procurement owner; present a closed-loop buying process and confirm budget authority; engage the existing investor relationship (Yes/Unknown) to secure sponsor commitment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Confirm investor/advisor sponsor engagement and identify an accountable procurement owner; schedule a final review with sponsor within 7 days</li><li>Deliver a formal RBCA/ROI package to the sponsor to solidify budget authority and closing plan</li><li>Coordinate with the VAR/integrator (No) to evaluate alternative deployment paths if needed and prepare a final contract package</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-27" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #28
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Lifespan - Strongline - New Business</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$20,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">71</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity shows strong alignment: RLA understanding is Yes (7), NCC live activation is Yes (6), and there is a managed services preference (Yes, 5). Investor relationship with key buying influences is Yes (7) and budget timing confirmed (Yes, 6), indicating solid purchasing momentum. There are 20 unknown responses noted in the scorecard and a few items with Unknown IT/stack readiness (4-4 range), suggesting some gaps in technical validation though the overall tilt is favorable. The combination of high RFQ readiness and multiple confirmed positives supports a strong close, but remaining unknowns on IT stack and formal buying process require final alignment before negotiation moves forward.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Unconfirmed IT stack alignment and executive sponsor status</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Finalize IT stack validation with the client IT lead and secure an executive sponsor; deliver a concise business-case-driven ROI to close the remaining gaps; use the investor relationship to lock in sponsor support.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Arrange a short IT validation session with the client’s IT lead to confirm SL stack compatibility and identify any blockers</li><li>Secure executive sponsor endorsement for the next stage and align on a formal buying process</li><li>Provide a finalized business-case and ROI metrics package to accelerate proposal acceptance</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-28" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #29
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Beth Israel Anna Jaques - Strongline - Expansion</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">7. Final Contract Execution</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$16,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #ffc107;">66</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">RLA understanding is Unknown (7) but NCC live activation is No (6); vendor preference to outsource is Yes (5); VAR/integrator deployment with Commure is No (6); investor/advisor influence is Yes (7) signaling support from high-influence buyers. The client has a mix of strong business case development (Yes for business case scoping 4) and IT-standardization (Yes 3). Budget timing is Unknown (6), and there is a safety event that supports urgency (6). The unknowns around budget timing and formal buying criteria (Unknown 4) plus 20 Unknown responses indicate closing risk despite sponsor alignment.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Unclear budget timing and formal buying process despite investor sponsor support</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Lock in formal budget authority and a defined buying process with the executive sponsor; present a near-term decision memo to the formal committee and finalize contract terms; leverage investor sponsor to expedite procurement.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Confirm the formal buying process with the executive sponsor and finalize the procurement owner</li><li>Provide a concrete budget timing plan and TCO to eliminate Unknown budget timing</li><li>Deliver a concise contract-ready package and schedule final contract review with the sponsor</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-29" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #30
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Beth Israel Behavioral Health Services (Danvers) - Strongline - Expansion</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">7. Final Contract Execution</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Commit</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$12,000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">8/29/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">54</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">RLA understanding is Unknown (7) while NCC live activation is No (6), and vendor preference for managed services is Yes (5). The client has a solid ROI and business-case approach (Yes for ROI 3, Yes for ROI/metrics 3) and investor engagement is present (Yes 7). IT and standardization are partially addressed (IT approvals Yes 4; standardization Unknown 3), but there are ongoing unknowns around budget timing (Unknown 6) and formal buying process among key influences (Unknown 4). The critical gaps include Budget Not Confirmed and 20 Unknown Responses, which could delay finalization despite strong sponsor involvement.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget timing unknown and unclear formal buying process despite sponsor engagement</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Obtain explicit budget authority and schedule a formal contract routing with the executive sponsor; accelerate through procurement with a concise procurement package; use investor sponsor to unblock remaining decision steps.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Obtain explicit budget timing from the sponsor and procurement owner; confirm the approving authorities</li><li>Provide a compact ROI and cost analysis tailored to Danvers Mental Health expansion to obtain final approvals</li><li>Coordinate a final contract review with the executive sponsor and the legal/Procurement teams</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-30" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #31
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Boston Childrens - Strongline Asset Tracking</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Joe Monaco</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">5. Proposal/Price Quote</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$0</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">10/1/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #dc3545;">57</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity scored 7 on RLA understanding, indicating the client needs education on how RLA is achieved and the associated costs. They answered No to adopting a vendor-provided managed services model with low capital entry, signaling resistance to a capital-light deployment. An investor/advisor relationship with key buying influences exists with a high influence (Yes, 7) and there was an on-site meeting plus executive sponsorship, which strengthens engagement. However, RTLS for NCC live activation is not in place (No), and budget timing/funding are Unknown, with the scorecard flagging Budget Not Confirmed and 20 Unknown responses, creating procurement and deployment risk as you move toward contracting.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget confirmation is Unknown with 20 Unknown responses across the scorecard, and there is no pilot commitment indicated yet.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Leverage the investor/advisor relationship to secure formal Economic Buying influence and a CFO-level budget confirmation; develop a detailed ROI/TCO for NCC RTLS, and propose a pilot with explicit success criteria.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Engage the Executive Sponsor and Economic Buyer to finalize budget timing and confirm funding source; request formal budget confirmation before finalizing the proposal.</li><li>Secure a pilot commitment for Strongline Asset Tracking with NCC RTLS, and define a pilot charter with measurable success criteria.</li><li>Prepare and share a refined ROI/TCO business case demonstrating cost offsets from RTLS integration and leverage the investor/advisor relationship to accelerate procurement.</li></ul></td>
+      </tr>
+    </table>
+
+    <table id="opp-31" style="border-collapse: collapse; width: 100%; margin-bottom: 30px; font-family: Arial, sans-serif; page-break-inside: avoid;">
+      <tr>
+        <td colspan="2" style="border: 1px solid #ddd; padding: 12px; background-color: #2c3e50; color: white; font-weight: bold;">
+          Opportunity #32
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; width: 25%;">Opp Name</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">UHS - Referral</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Opp Owner</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">David Swanson</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Stage</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">4. Scoping</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Forecast Cat</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">Best Case</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">ACV</td>
+        <td style="border: 1px solid #ddd; padding: 10px; font-weight: bold;">$0</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Close Date</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">9/30/2025</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">KF Score</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">
+          <span style="font-weight: bold; color: #28a745;">85</span>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Summary</td>
+        <td style="border: 1px solid #ddd; padding: 10px;">This opportunity shows strong alignment for Stage 4 with a KF Scorecard score of 85, including clear evidence of business impact, early adoption, and an executive sponsor engagement. There is an established Commure strategic partner and multiple influencers involved, supporting a precise scoping process. However, budget timing and funding confirmations are Unknown across the scorecard, and the EHR question indicates a No alignment, which could complicate integration planning. The primary risk remains the lack of confirmed budget and explicit pilot commitments, despite robust scoping signals.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Risk</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #dc3545;">Budget timing/confirmed and funding source Unknown; no pilot commitment yet; EHR alignment marked No (5 points) signaling potential integration risk.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold;">Mitigation</td>
+        <td style="border: 1px solid #ddd; padding: 10px; color: #28a745;">Secure formal budget confirmation by engaging the Economic Buyer and CFO; develop a targeted EHR integration plan and pilot framework to demonstrate clinical workflow improvements; involve the Commure strategic partner to accelerate procurement.</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0; font-weight: bold; vertical-align: top;">Next Steps</td>
+        <td style="border: 1px solid #ddd; padding: 10px;"><ul style="margin: 0; padding-left: 20px;"><li>Schedule a scoping workshop with the Economic Buyer, CFO, and executive sponsor to finalize budget timing and funding source.</li><li>Define and commit to a pilot or PoC with explicit success metrics, ensuring alignment with EHR workflows and appropriate vendor integration.</li><li>Leverage the Commure strategic partner relationship to present a joint solution roadmap and address remaining gaps (e.g., EHR compatibility and vendor landscape).</li></ul></td>
+      </tr>
+    </table>
+</body>
+</html>
